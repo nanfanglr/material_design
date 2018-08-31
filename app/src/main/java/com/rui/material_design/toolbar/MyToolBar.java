@@ -15,6 +15,7 @@ import com.rui.material_design.R;
 /**
  * 自定义Toolbar
  * 由于弹出的menu无法定义高度宽度，因此放弃自定义toolbar
+ * 从样式的灵活性来说还是自定义view好用
  */
 public class MyToolBar extends Toolbar {
     /**
