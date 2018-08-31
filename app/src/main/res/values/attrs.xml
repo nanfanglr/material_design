@@ -3,4 +3,19 @@
     <declare-styleable name="Follow">
         <attr name="target" format="reference" />
     </declare-styleable>
+
+    <declare-styleable name="HeadBar">
+        <attr name="leftText" format="string" />
+        <attr name="titleText" format="string" />
+        <attr name="rightText" format="string" />
+        <attr name="isTvLeftVis" format="boolean" />
+        <attr name="rightIvImgRes" format="reference" />
+        <attr name="leftImgRes" format="reference" />
+        <attr name="rightTvImgRes" format="reference" />
+        <attr name="rightTextSize" format="dimension" />
+        <attr name="rightTextColor" format="color" />
+        <attr name="leftTextSize" format="dimension" />
+        <attr name="leftTextColor" format="color" />
+    </declare-styleable>
+
 </resources>

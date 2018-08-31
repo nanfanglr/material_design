@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".toolbar.HeadBarActivity">
+
+    <com.rui.material_design.toolbar.HeadBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftText="返回"
+        app:leftTextColor="@color/white"
+        app:rightTextColor="@color/white"
+        app:rightTvImgRes="@drawable/icon_duihuan"
+        app:titleText="测试标题" />
 
 
 </LinearLayout>

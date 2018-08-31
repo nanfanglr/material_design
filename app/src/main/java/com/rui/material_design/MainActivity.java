@@ -14,6 +14,7 @@ import android.widget.TextView;
 import com.anlia.pageturn.BookPageViewActivity;
 import com.rui.material_design.behavior.FollowBehaviorActivity;
 import com.rui.material_design.behavior.ScrollToTopBehaviorActivity;
+import com.rui.material_design.toolbar.HeadBarActivity;
 import com.rui.material_design.toolbar.ToolbarActivity;
 
 import butterknife.BindView;
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         BarUtils.setNavBarColor(this, Color.parseColor("#55000000"));
     }
 
-    @OnClick({R.id.button, R.id.button2, R.id.button3, R.id.button4})
+    @OnClick({R.id.button, R.id.button2, R.id.button3, R.id.button4, R.id.button5})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button:
@@ -62,6 +63,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button4:
                 startActivity(new Intent(this, ToolbarActivity.class));
                 break;
+            case R.id.button5:
+                startActivity(new Intent(this, HeadBarActivity.class));
+                break;
         }
     }
+
+
 }
