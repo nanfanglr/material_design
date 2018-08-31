@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">material_design</string>
+    <string name="menu_search">搜索</string>
+    <string name="menu_notification">通知</string>
+    <string name="item_one">菜单1</string>
+    <string name="item_two">菜单2</string>
 </resources>

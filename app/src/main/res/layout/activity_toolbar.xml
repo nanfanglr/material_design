@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:logo="@mipmap/ic_launcher"
+        app:navigationIcon="@mipmap/icon_back_small"
+        app:popupTheme="@style/OverflowMenuStyle"
+        app:subtitle="SubTitle"
+        app:subtitleTextColor="#ffffff"
+        app:title="Title"
+        app:titleTextColor="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="text"
+            android:textColor="#ff0000" />
+
+    </android.support.v7.widget.Toolbar>
+
+</FrameLayout>

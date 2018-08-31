@@ -1,10 +1,12 @@
-package com.rui.material_design;
+package com.rui.material_design.behavior;
 
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.support.design.widget.CoordinatorLayout;
 import android.util.AttributeSet;
 import android.view.View;
+
+import com.rui.material_design.R;
 
 /**
  * Created by rui on 2018/8/18

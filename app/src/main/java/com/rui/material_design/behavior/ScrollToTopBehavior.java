@@ -1,4 +1,4 @@
-package com.rui.material_design;
+package com.rui.material_design.behavior;
 
 import android.content.Context;
 import android.support.annotation.NonNull;

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/icon_duihuan"
+        android:title="@string/menu_search"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_notification"
+        android:icon="@drawable/icon_duihuan"
+        android:title="@string/menu_notification"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/toolbar_r_img"
+        android:icon="@drawable/icon_duihuan"
+        android:title="分享"
+        app:showAsAction="ifRoom">
+        <!-- item包含menu表示该menu是item下的子菜单 -->
+        <menu>
+            <!-- 将group中的菜单项放于一个组里面 -->
+            <group>
+                <item
+                    android:id="@+id/action_item_one"
+                    android:title="@string/item_one"
+                    app:showAsAction="never" />
+
+                <item
+                    android:id="@+id/action_item_two"
+                    android:title="@string/item_two"
+                    app:showAsAction="never" />
+            </group>
+        </menu>
+    </item>
+</menu>
+

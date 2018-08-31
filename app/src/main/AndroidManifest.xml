@@ -16,8 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ScrollToTopBehaviorActivity" />
-        <activity android:name=".FollowBehaviorActivity"></activity>
+        <activity android:name=".behavior.ScrollToTopBehaviorActivity" />
+        <activity android:name=".behavior.FollowBehaviorActivity" />
+        <activity android:name="com.anlia.pageturn.BookPageViewActivity" />
+        <activity android:name=".toolbar.ToolbarActivity" />
+        <activity android:name=".toolbar.HeadBarActivity"></activity>
     </application>
 
 </manifest>
