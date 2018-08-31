@@ -2,7 +2,6 @@ package com.rui.material_design;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
 import android.support.v4.content.ContextCompat;
@@ -45,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 //        BarUtils.setNavBarVisibility(this, false);
 //        BarUtils.setNavBarImmersive(this.getWindow());
 
-        BarUtils.setNavBarColor(this, Color.parseColor("#55000000"));
+//        BarUtils.setNavBarColor(this, Color.parseColor("#55000000"));
     }
 
     @OnClick({R.id.button, R.id.button2, R.id.button3, R.id.button4, R.id.button5})

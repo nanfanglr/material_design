@@ -31,5 +31,13 @@
 
     </style>
 
+    <style name="popmenu_animation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popu_show_scale</item>
+        <item name="android:windowExitAnimation">@anim/popu_hide_scale</item>
+    </style>
+    <style name="popmenu_animation_trans" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popu_show_trans</item>
+        <item name="android:windowExitAnimation">@anim/popu_hide_trans</item>
+    </style>
 
 </resources>

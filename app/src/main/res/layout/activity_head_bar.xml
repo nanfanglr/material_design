@@ -8,6 +8,7 @@
     tools:context=".toolbar.HeadBarActivity">
 
     <com.rui.material_design.toolbar.HeadBar
+        android:id="@+id/head_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:leftText="返回"
