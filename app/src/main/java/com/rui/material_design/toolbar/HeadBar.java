@@ -51,7 +51,7 @@ public class HeadBar extends RelativeLayout {
         ivRightRes = ta.getResourceId(R.styleable.HeadBar_rightIvImgRes, -1);
         leftImgRes = ta.getResourceId(R.styleable.HeadBar_leftImgRes, -1);
         tvRightImgRes = ta.getResourceId(R.styleable.HeadBar_rightTvImgRes, -1);
-        isTvLeftVis = ta.getBoolean(R.styleable.HeadBar_isTvLeftVis, false);
+        isTvLeftVis = ta.getBoolean(R.styleable.HeadBar_isTvLeftVis, true);
         isIvRightVis = ivRightRes != -1;
         isTvRightVis = !TextUtils.isEmpty(mRight) || tvRightImgRes != -1 || isIvRightVis;
 
@@ -65,8 +65,8 @@ public class HeadBar extends RelativeLayout {
         tvLeft.setTextSize(px2sp(getContext(), leftTextSize));
         tvRight.setTextColor(rightTextColor);
         tvRight.setTextSize(px2sp(getContext(), rightTextSize));
-        if (isTvLeftVis) {
-            tvLeft.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0);
+        if (!isTvLeftVis) {
+            tvLeft.setVisibility(GONE);
         }
         if (!TextUtils.isEmpty(mleft)) {
             tvLeft.setText(mleft);
