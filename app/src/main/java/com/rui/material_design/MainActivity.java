@@ -38,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         BarUtils.setStatusBarColor(this, ContextCompat.getColor(this, R.color.colorPrimary), 0);
+        //设置状态栏文字颜色
+        BarUtils.setStatusBarLightMode(this, true);
         BarUtils.addMarginTopEqualStatusBarHeight(rootLayout);
 
 //        BarUtils.setStatusBarVisibility(this, false);
@@ -47,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 //        BarUtils.setNavBarColor(this, Color.parseColor("#55000000"));
     }
 
-    @OnClick({R.id.button, R.id.button2, R.id.button3, R.id.button4, R.id.button5})
+    @OnClick({R.id.button, R.id.button2, R.id.button3, R.id.button4, R.id.button5, R.id.button6})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button:
@@ -64,6 +66,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.button5:
                 startActivity(new Intent(this, HeadBarActivity.class));
+                break;
+            case R.id.button6:
+                startActivity(new Intent(this, TextFromHtmlActivity.class));
                 break;
         }
     }

@@ -20,7 +20,8 @@
         <activity android:name=".behavior.FollowBehaviorActivity" />
         <activity android:name="com.anlia.pageturn.BookPageViewActivity" />
         <activity android:name=".toolbar.ToolbarActivity" />
-        <activity android:name=".toolbar.HeadBarActivity"></activity>
+        <activity android:name=".toolbar.HeadBarActivity" />
+        <activity android:name=".TextFromHtmlActivity"></activity>
     </application>
 
 </manifest>
