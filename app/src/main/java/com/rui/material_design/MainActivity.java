@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.anlia.pageturn.BookPageViewActivity;
 import com.rui.material_design.behavior.FollowBehaviorActivity;
 import com.rui.material_design.behavior.ScrollToTopBehaviorActivity;
+import com.rui.material_design.singletask.SingleTaskActivity;
 import com.rui.material_design.toolbar.HeadBarActivity;
 import com.rui.material_design.toolbar.ToolbarActivity;
 
@@ -49,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 //        BarUtils.setNavBarColor(this, Color.parseColor("#55000000"));
     }
 
-    @OnClick({R.id.button, R.id.button2, R.id.button3, R.id.button4, R.id.button5, R.id.button6})
+    @OnClick({R.id.button, R.id.button2, R.id.button3, R.id.button4, R.id.button5, R.id.button6, R.id.button7})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button:
@@ -69,6 +70,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.button6:
                 startActivity(new Intent(this, TextFromHtmlActivity.class));
+                break;
+            case R.id.button7:
+                startActivity(new Intent(this, SingleTaskActivity.class));
                 break;
         }
     }

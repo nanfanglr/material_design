@@ -32,6 +32,6 @@
         android:layout_width="match_parent"
         android:layout_height="128dp"
         android:background="@android:color/holo_blue_light"
-        app:layout_behavior=".ScrollToTopBehavior" />
+        app:layout_behavior="com.rui.material_design.behavior.ScrollToTopBehavior" />
 
 </android.support.design.widget.CoordinatorLayout>

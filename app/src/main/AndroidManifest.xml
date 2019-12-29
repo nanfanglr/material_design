@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".singletask.SecondSelectActivity"></activity>
+        <activity android:name=".singletask.FirstSelectActivity" />
+        <activity
+            android:name=".singletask.SingleTaskActivity"
+            android:launchMode="singleTask" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +26,7 @@
         <activity android:name="com.anlia.pageturn.BookPageViewActivity" />
         <activity android:name=".toolbar.ToolbarActivity" />
         <activity android:name=".toolbar.HeadBarActivity" />
-        <activity android:name=".TextFromHtmlActivity"></activity>
+        <activity android:name=".TextFromHtmlActivity" />
     </application>
 
 </manifest>
