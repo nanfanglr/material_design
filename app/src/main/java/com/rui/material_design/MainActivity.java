@@ -16,6 +16,7 @@ import com.rui.material_design.behavior.ScrollToTopBehaviorActivity;
 import com.rui.material_design.singletask.SingleTaskActivity;
 import com.rui.material_design.toolbar.HeadBarActivity;
 import com.rui.material_design.toolbar.ToolbarActivity;
+import com.rui.material_design.webview.WebViewActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -50,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 //        BarUtils.setNavBarColor(this, Color.parseColor("#55000000"));
     }
 
-    @OnClick({R.id.button, R.id.button2, R.id.button3, R.id.button4, R.id.button5, R.id.button6, R.id.button7})
+    @OnClick({R.id.button, R.id.button2, R.id.button3, R.id.button4, R.id.button5, R.id.button6, R.id.button7, R.id.button8})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button:
@@ -73,6 +74,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.button7:
                 startActivity(new Intent(this, SingleTaskActivity.class));
+                break;
+            case R.id.button8:
+                startActivity(new Intent(this, WebViewActivity.class));
                 break;
         }
     }
