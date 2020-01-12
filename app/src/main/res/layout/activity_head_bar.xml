@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".toolbar.HeadBarActivity">
 
@@ -16,6 +17,17 @@
         app:rightTextColor="@color/white"
         app:rightTvImgRes="@drawable/icon_duihuan"
         app:titleText="测试标题" />
+
+
+    <TextView
+        android:id="@+id/btn_show_list_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@color/blue"
+        android:text="ListPopupWindow"
+        android:padding="16dp"
+        android:textColor="@color/white" />
 
 
 </LinearLayout>

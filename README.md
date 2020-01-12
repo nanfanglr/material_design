@@ -7,7 +7,7 @@
 
 [3.Toolbar相关练习](https://github.com/nanfanglr/material_design/tree/master/app/src/main/java/com/rui/material_design/toolbar/ToolbarActivity.java)
 
-[4.自定义Headbar，点右边弹出popupwindow自定义菜单](https://github.com/nanfanglr/material_design/tree/master/app/src/main/java/com/rui/material_design/toolbar/HeadBarActivity.java)
+[4.自定义Headbar，点右边弹出popupwindow自定义菜单,ListPopupWindow使用示范](https://github.com/nanfanglr/material_design/tree/master/app/src/main/java/com/rui/material_design/toolbar/HeadBarActivity.java)
 
 [5.Html.fromHtml处理TextView中字体颜色不同示例代码](https://github.com/nanfanglr/material_design/tree/master/app/src/main/java/com/rui/material_design/TextFromHtmlActivity.java)
 

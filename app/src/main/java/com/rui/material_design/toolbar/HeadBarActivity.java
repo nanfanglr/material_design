@@ -5,21 +5,34 @@ import android.graphics.Rect;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.ListPopupWindow;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.PopupWindow;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.rui.material_design.R;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
-public class HeadBarActivity extends AppCompatActivity {
+public class HeadBarActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     @BindView(R.id.head_bar)
     HeadBar headBar;
+    @BindView(R.id.btn_show_list_popup)
+    TextView btnShowListPopup;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +46,8 @@ public class HeadBarActivity extends AppCompatActivity {
                 popupOverflowMenu(headBar);
             }
         });
+        initListPopupWindow();
+
     }
 
     /**
@@ -95,5 +110,36 @@ public class HeadBarActivity extends AppCompatActivity {
 
     public void backClick(View view) {
         finish();
+    }
+
+    @OnClick(R.id.btn_show_list_popup)
+    public void onViewClicked() {
+        mPopup.show();
+    }
+
+    private ListPopupWindow mPopup;
+    private String[] mGoodArray = {"pencil", "potato", "peanut", "carrot", "cabbage", "cat"};
+
+    private void initListPopupWindow() {
+        mPopup = new ListPopupWindow(this);
+//        ArrayAdapter adapter = new ArrayAdapter(this, R.layout.spinner_item, mGoodArray);
+        List<String> strings = Arrays.asList(mGoodArray);
+        ListPopupWindowAdapter adapter = new ListPopupWindowAdapter(strings,this);
+        mPopup.setAdapter(adapter);
+        mPopup.setWidth(ViewGroup.LayoutParams.WRAP_CONTENT);
+        mPopup.setHeight(ViewGroup.LayoutParams.WRAP_CONTENT);
+        mPopup.setModal(true);
+        mPopup.setOnItemClickListener(this);
+//        mPopup.setHorizontalOffset(100);
+//        mPopup.setVerticalOffset(100);
+        mPopup.setAnchorView(btnShowListPopup);
+        //动画效果有问题
+//        mPopup.setAnimationStyle(R.style.popmenu_animation);
+
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+        mPopup.dismiss();
     }
 }
