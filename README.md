@@ -15,3 +15,4 @@
 
 [7.WebView中原生与web交互练习](https://github.com/nanfanglr/material_design/tree/master/app/src/main/java/com/rui/material_design/webview)，[WebView中的web页面](https://github.com/nanfanglr/material_design/tree/master/app/src/main/assets/webview.html)
 
+[8.通过绘制实现优惠券背景效果（花边效果）](https://github.com/nanfanglr/material_design/tree/master/app/src/main/java/com/rui/material_design/customview)

@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    xmlns:VoucherView="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blue"
+    android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar_normal"
@@ -28,4 +32,60 @@
 
     </android.support.v7.widget.Toolbar>
 
-</FrameLayout>
+
+    <com.rui.material_design.customview.CouponDisplayView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="40dp"/>
+
+    <com.rui.material_design.customview.VoucherView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        VoucherView:drawType="circle"
+        VoucherView:orientation="horizontal"
+        VoucherView:mGap="2dp"
+        VoucherView:mRadius="5dp"
+        VoucherView:BgColor="#FFA90F">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="@color/colorAccent"
+                android:text="优惠劵10元"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:padding="5dp"
+                android:text="使用范围:酒店/机票/旅行" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:padding="5dp"
+                android:text="编号:8888888888888" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:text="截止日期:2017-4-14" />
+        </LinearLayout>
+    </com.rui.material_design.customview.VoucherView>
+
+
+</LinearLayout>

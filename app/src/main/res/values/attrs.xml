@@ -17,5 +17,24 @@
         <attr name="leftTextSize" format="dimension" />
         <attr name="leftTextColor" format="color" />
     </declare-styleable>
+    <declare-styleable name="voucherView">
 
+        <attr name="drawType">
+            <enum name="circle" value="0" />
+            <enum name="ellipse" value="1" />
+            <enum name="triangle" value="2" />
+            <enum name="square" value="3" />
+        </attr>
+
+        <attr name="orientation">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+            <enum name="around" value="2" />
+        </attr>
+
+        <attr name="mGap" format="dimension" />
+        <attr name="mRadius" format="dimension" />
+        <attr name="BgColor" format="color" />
+
+    </declare-styleable>
 </resources>
