@@ -37,4 +37,11 @@
         <attr name="BgColor" format="color" />
 
     </declare-styleable>
+
+    <declare-styleable name="IndexBar">
+        <attr name="indexBarTextSize" format="dimension"/>
+        <attr name="indexBarTextColor" format="color"/>
+        <attr name="pressIndexBarBgColor" format="color"/>
+    </declare-styleable>
+
 </resources>

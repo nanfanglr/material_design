@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.soyute.supplychain.circle.ui.avtivity.DynamicPublishActivity">
+
+    <com.soyute.comresource.widget.HeadBar
+        android:id="@+id/head_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:isBackIconGone="true"
+        app:leftText="取消"
+        app:leftTextSize="16sp"
+        app:rightText="发布"
+        app:rightTextColor="@color/blue_bg"
+        app:rightTextSize="16sp"
+        app:titleText="发布动态" />
+
+    <EditText
+        android:id="@+id/et_input_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimens_10dp"
+        android:layout_marginLeft="@dimen/dimens_16dp"
+        android:layout_marginRight="@dimen/dimens_16dp"
+        android:layout_marginTop="@dimen/dimens_10dp"
+        android:background="@null"
+        android:gravity="start"
+        android:maxLength="500"
+        android:hint="分享新鲜事..."
+        android:minHeight="100dp"
+        android:maxHeight="200dp"
+        android:textSize="16sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_add_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimens_16dp"
+        android:layout_marginLeft="@dimen/dimens_16dp"
+        android:layout_marginRight="@dimen/dimens_16dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/app_line_gray4" />
+
+    <LinearLayout
+        android:id="@+id/ll_add_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dimens_10dp"
+        android:paddingTop="@dimen/dimens_10dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_add_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="8dp" />
+
+        <TextView
+            android:id="@+id/tv_add_tag"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_gapline_gray"
+            android:paddingBottom="6dp"
+            android:paddingLeft="@dimen/dimens_10dp"
+            android:paddingRight="@dimen/dimens_10dp"
+            android:paddingTop="6dp"
+            android:text="添加标签"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_tag_hint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:lines="1"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:text="@string/tag_tips" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/app_line_gray4" />
+
+    <RelativeLayout
+        android:id="@+id/rl_publish_scope"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimens_16dp"
+        android:paddingRight="@dimen/dimens_16dp">
+
+        <TextView
+            android:id="@+id/tv_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/icon_earth"
+            android:drawablePadding="8dp"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp"
+            android:text="谁可以看"
+            android:textColor="@color/text_black3"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_publish_scope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimens_10dp"
+            android:layout_toRightOf="@+id/tv_member"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/icon_arrow_right_gray"
+            android:ellipsize="end"
+            android:gravity="end|center_vertical"
+            android:lines="1"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp"
+            android:text="公开"
+            android:textColor="@color/text_gray" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/app_line_gray4" />
+
+
+</LinearLayout>

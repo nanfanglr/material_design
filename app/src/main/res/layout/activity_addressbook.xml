@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="46dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_addressbook"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparency" />
+    </LinearLayout>
+
+    <com.rui.material_design.contacts.IndexBar
+        android:id="@+id/indexbar_addressbook"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:paddingTop="66dp"
+        android:paddingBottom="20dp"
+        app:indexBarTextSize="12sp"
+        app:pressIndexBarBgColor="@android:color/transparent" />
+
+    <com.rui.material_design.contacts.ContactSearchView
+        android:id="@+id/searchview_addressbook"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparency" />
+
+
+</FrameLayout>

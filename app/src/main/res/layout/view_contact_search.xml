@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!--数据容器,包括标题-->
+
+    <RelativeLayout
+        android:id="@+id/rl_searchview_toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@android:color/white"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical">
+
+
+        <ImageButton
+            android:id="@+id/ib_searchview_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:paddingLeft="16dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/tv_searchview_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/icon_search_gray"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="" />
+
+
+        <EditText
+            android:id="@+id/et_searchview_edit"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_searchview_search"
+            android:layout_toRightOf="@+id/ib_searchview_back"
+            android:background="@drawable/shape_searchview_et_bg"
+            android:drawableLeft="@drawable/icon_search_icon"
+            android:drawablePadding="9dp"
+            android:hint=""
+            android:imeOptions="actionDone"
+            android:inputType="textNoSuggestions"
+            android:paddingLeft="10dp"
+            android:paddingRight="30dp"
+            android:singleLine="true"
+            android:textColor="#323232"
+            android:textColorHint="#989898"
+            android:textSize="14sp"
+            tools:hint="添加好友" />
+
+        <ImageButton
+            android:id="@+id/ib_searchview_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignRight="@+id/et_searchview_edit"
+            android:background="@color/transparency"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/icon_searchview_clear"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_searchview_titletext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#323232"
+            android:textSize="18sp"
+            android:visibility="visible"
+            tools:text="通讯录"
+            tools:visibility="visible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_alignParentBottom="true"
+            android:background="#c3c3c3" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_searchview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</LinearLayout>
